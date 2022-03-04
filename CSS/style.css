@@ -39,3 +39,22 @@ nav h1{
      font-weight: 700;
     
 }
+
+.hd{
+    text-align: center;
+    font-size: 10em;
+}
+
+.des{
+    border: 2px solid black;
+    border-radius: 45px;
+    background-color: black;
+    text-align: center;
+    height: 70vh;
+    margin-top: 20px;
+    background-image: url("image/akan.png");
+    background-size: cover;
+    color: blue;
+    font-weight: 700;
+
+}
