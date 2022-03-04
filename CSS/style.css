@@ -67,3 +67,14 @@ nav h1{
     width: fit-content;
     margin-top: 500px;
 }
+
+.container2{
+    padding: 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin:  0px 250px;
+    border: 2px solid white;
+    border-radius: 45px;
+
+}
