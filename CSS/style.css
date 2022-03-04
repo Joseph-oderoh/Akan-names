@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("image/ghana.jpg");
+    background-size: cover;
+}
+
+nav{
+    display: block;
+    background-color: black;
+    position: relative;
+    justify-content: space-between;
+}
+.nav-bar{
+    text-align: center;
+}
+
+nav h1{
+    text-align: center;
+    font-weight: 500;
+    color: blue;
+}
+
+
+.nav-menu {
+    list-style-type: none;
+    display: flex; 
+    gap: 30px;
+}
+
+.nav-menu a{
+   
+    text-decoration: none;
+     color: blue;
+     font-weight: 700;
+    
+}
