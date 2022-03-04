@@ -52,9 +52,18 @@ nav h1{
     text-align: center;
     height: 70vh;
     margin-top: 20px;
-    background-image: url("image/akan.png");
+    background-image: url("/image/akan.png");
     background-size: cover;
     color: blue;
     font-weight: 700;
 
+}
+
+.container{
+    
+    height: 100vh;
+    justify-content: space-around;
+    background-color: white;
+    width: fit-content;
+    margin-top: 500px;
 }
