@@ -24,7 +24,7 @@ form.addEventListener("click", function (e) {
 });
 function compareData(formData){
     var genders = document.getElementById("gender");
-    if( document.myForm.year.value == "" ) {
+    if( document.myForm.year.value == "" || document.year.value != 4) {
        alert( "Please provide a valid year of birth" );
        
       

@@ -8,8 +8,8 @@
 This is a website that takes the birthday of  date of the user and caculates the day of the week they were born that described with days of the week.Which are either male and female that realy say much  about  the person.
 ## Setup/Installation Requirements
 * You will first need to get into a browser or access to one.
-* Navigate to GitHub locate the live link
-* Next click on this live link 
+* Navigate to GitHub locate the live link 
+* Next click on this live link https://joseph-oderoh.github.io/Akan-names/
 * This will direct you to a new tab displaying the details of the portforlio.
 
 

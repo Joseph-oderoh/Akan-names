@@ -59,6 +59,25 @@ nav h1{
 
 }
 
+.akanh{
+    text-align: center;
+    font-weight: 800;
+    color: blue;
+    border: 2px solid black;
+    padding: 30px;
+    background-color: white;
+    width: fit-content;
+    border-radius: 45px;
+    margin: 30px  250px;
+
+
+}
+
+.akanh:hover{
+    color: white;
+    background-color: black;
+    box-shadow: 2px 3px 4px;
+}
 .container{
     
     height: 100vh;
