@@ -6,13 +6,15 @@ let dayNames = ["Sunday","Monday","Tuesday","Wednesday", "Thursday", "Friday","S
 let maleNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw", "Kofi","Kwame"];
 let femaleNames = ["Akosua","Adwoa","Abenaa","Akua"," Yaa","Afua","Ama"];
 
-let form = document.getElementById("form");
- let year =   document.getElementById("year");
-form.addEventListener('submit', (e)=>{
-     e.preventDefault()
+const form = document.getElementById("form");
+const year = document.getElementById("year");
+const month = document.getElementById("month");
+const male = document.getElementById("male");
+const female = document.getElementById("female");
+
+
+
+
+ 
+    
   
-     if (year == ""){
-         alert("fill in the form");
-     }
-     
-});

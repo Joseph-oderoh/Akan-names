@@ -28,26 +28,34 @@
             <p class="lead">The akan  ethnicity of people  who live in the present day Ghana. <br> 
                 The community is divided into subgroups.This naming system is widely used  around West Africa.The names are derived from the  ghanian culture.<br> 
                 Frequently in Ghana  ,children a given their first name as a <em>day name</em>which coresponds to the day of the week. <br> 
-                This <em>day name's</em> have further meanings concerning the character of the person .Most of the of the Ghanian have atleas on of this names in their official name</p>
+                This <em>day name's</em> have further meanings concerning the character of the person .Most of the of the Ghanian have atleas on of this names in their official name. For more <a href="https://en.wikipedia.org/wiki/Akan_names">info </a></p>
         </div>
     </div>
     <div>
         <h1>Akan form</h1>
     </div>
-    <form class="container2" name="myForm" id="form">
-        <div id="message"></div>
+    <form class="container2" onsubmit="myFunction()" id="form">
         <div>
             <p>1. Enter your year of birth</p>
-            <input type="text" id="Year" name="birth" placeholder="Year of birth">
+            <input id="Year" type="number" class="form-control" name="year" placeholder="Year of birth" required>
+           
           </div> <br>
           <div>
               <p>2. Enter month of birth</p>
-            <input type="text" id="month" placeholder="moth of birth">
+            <input type="number" id="month" class="form-control" placeholder="moth of birth" required>
+            <div class="error"></div>
           </div> <br>
           <div>
+            <p>3. Enter date birth</p>
+            <input type="number" id="date" class="form-control" placeholder="Date of birth" required>
+          </div>
+          <div>
               <p> Check your Gender</p>
-              <input type="radio" id="male" name="male" value="male">Male
-              <input type="radio" id="female" name="female" value="female">Female
+              
+              <input type="radio" id="male" name="male" value="male">Male 
+              
+              <input type="radio" id="female" name="female" value="female">Female 
+              
           </div>
 
           <div>
