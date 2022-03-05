@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url("./image/ghana.jpg");
+    background-image: url("../image/ghana.jpg");
     background-size: cover;
 }
 
@@ -52,7 +52,7 @@ nav h1{
     text-align: center;
     height: 70vh;
     margin-top: 20px;
-    background-image: url("./image/akan.png");
+    background-image: url("../image/akan.png");
     background-size: cover;
     color: blue;
     font-weight: 700;
