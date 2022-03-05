@@ -8,25 +8,7 @@ document.title = "Akan";
 // var month = document.getElementById("month");
 // var  male = document.getElementById("male");
 // var female = document.getElementById("female");
-// // function handleForm(event) {
-// //     event.preventDefault(); 
-// //   } 
-// // form.addEventListener('submit', handleForm);
-// function myFunction(){
-    
-// var  = document.getElementsByName("myForm");
-// if( document.myForm.year.value == "" || document.myForm.year.value.length !=4) {
-//    alert( "Please provide a valid" );
-//    document.myForm.year.focus() ;
-//    return false;
-// }else if( month.value == "" || isNaN( document.myForm.month.value ) || 
-// document.myForm.month.value.length != 2 ){
-//  alert( "Please provide your month" );
-//    document.myForm.month.focus() ;
-//    return false;
 
-// }
-// }
 
 var CC, YY, MM, DD, d, dayValue;
 var dayNames = ["Sunday","Monday","Tuesday","Wednesday", "Thursday", "Friday","Saturday" ];
@@ -34,7 +16,7 @@ var maleNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw", "Kofi","Kwame"];
 var femaleNames = ["Akosua","Adwoa","Abenaa","Akua"," Yaa","Afua","Ama"];
 
 let form = document.getElementById("form");
-form.addEventListener("submit", function (e) {
+form.addEventListener("click", function (e) {
     e.preventDefault();
     var getData = new FormData(form);
     compareData(formData);
@@ -42,7 +24,7 @@ form.addEventListener("submit", function (e) {
 });
 function compareData(formData){
     var genders = document.getElementById("gender");
-    if( document.myForm.year.value == "") {
+    if( document.myForm.year.value == "" ) {
        alert( "Please provide a valid year of birth" );
        
       
@@ -64,10 +46,28 @@ function compareData(formData){
     }
   
   }
+
+
+function calculateDayValue(){
+    year = document.getElementById(year).value;
+    CC =
+    YY =
+    MM =
+    DD =
+    d 
+}
+
+
   function handleForm(event) {
     event.preventDefault(); 
   } 
 form.addEventListener('submit', handleForm);
 function myFunction(){
+
+}
+
+function findName(){
+    dayValue = calculateDayValue();
+    getGender();
 
 }
