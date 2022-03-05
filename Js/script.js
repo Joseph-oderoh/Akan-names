@@ -11,7 +11,7 @@ let form = document.getElementById("form");
 form.addEventListener('submit', (e)=>{
      e.preventDefault()
   
-     if (year.value == ""){
+     if (year == ""){
          alert("fill in the form");
      }
      
