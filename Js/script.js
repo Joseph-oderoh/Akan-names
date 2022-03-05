@@ -2,72 +2,50 @@ let heading = "Akan";
 document.title = "Akan";
 
 
-
-// var form = document.getElementById("form");
-// var year  = document.getElementById("year");
-// var month = document.getElementById("month");
-// var  male = document.getElementById("male");
-// var female = document.getElementById("female");
-
-
-var CC, YY, MM, DD, d, dayValue;
-var dayNames = ["Sunday","Monday","Tuesday","Wednesday", "Thursday", "Friday","Saturday" ];
-var maleNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw", "Kofi","Kwame"];
-var femaleNames = ["Akosua","Adwoa","Abenaa","Akua"," Yaa","Afua","Ama"];
-
 let form = document.getElementById("form");
-form.addEventListener("click", function (e) {
-    e.preventDefault();
-    var getData = new FormData(form);
-    compareData(formData);
-    
-});
-function compareData(formData){
-    var genders = document.getElementById("gender");
-    if( document.myForm.year.value == "" || document.year.value != 4) {
-       alert( "Please provide a valid year of birth" );
-       
-      
-    }
-    else if( document.myForm.month.value == ""){
-       alert( "Please provide your month of birth!" ); 
-    }
-    else if( document.myForm.date.value == "") {
-       alert( "Please provide a valid date" );
-      
-      
-    }
-    else if(genders[0].checked==false && genders[1].checked==false ) {
-        alert("You must select male or female");
-       
-    }   
-    else{
-     
-    }
-  
-  }
+let year  = document.getElementById("year");
+let month = document.getElementById("month");
+let  male = document.getElementById("male");
+ let female = document.getElementById("female");
+let btn = document.getElementById("btn")
 
+function validate(){
+    if (year.value == "" || year < 4){
+        alert("Enter year eg: 2005");
+    }else{
+        return
+    }
+    if (month.value == ""){
+        alert("Enter month");
+    }else{
+        return
+    }
+    if (date.value == ""){
+        alert("Enter date");
+    }else{
+        return
+    }
+}
 
 function calculateDayValue(){
-    year = document.getElementById(year).value;
-    CC =
-    YY =
-    MM =
-    DD =
-    d 
-}
-
-
-  function handleForm(event) {
-    event.preventDefault(); 
-  } 
-form.addEventListener('submit', handleForm);
-function myFunction(){
+    CC =year.value.slice(0,2)
+    YY =year.value.substring(2)
+    MM =month.value
+    DD =date.value
+    d = ( ( (CC/4) -2*CC-1) + ( (5*YY/4) ) + ((26*(MM+1)/10) ) + DD)%7;
+return d.toFixed();
+// console.log(CC);
+// console.log(YY);
+// console.log(MM);
+// console.log(DD);
 
 }
+calculateDayValue();
+ 
+btn.addEventListener("click", (e)=> {
+    e.preventDefault();
+    validate();
+    calculateDayValue();
+});
 
-function findName(){
-    dayValue = calculateDayValue();
-    getGender();
 
-}
